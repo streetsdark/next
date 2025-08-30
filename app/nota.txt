@@ -1,0 +1,38 @@
+/app:Contiene todas las rutas, componentes y lógica para su aplicación; aquí es donde trabajará la mayor parte del tiempo.
+
+/app/lib:Contiene funciones utilizadas en su aplicación, como funciones de utilidad reutilizables y funciones de obtención de datos.
+
+/app/uiContiene todos los componentes de la interfaz de usuario de su aplicación, como tarjetas, tablas y formularios. Para ahorrarle tiempo, hemos prediseñado estos componentes.
+
+/public:Contiene todos los activos estáticos para su aplicación, como imágenes.
+Archivos de configuración : También encontrará archivos de configuración, como los que next.config.tsse encuentran en la raíz de su aplicación. La mayoría de estos archivos se crean y preconfiguran al iniciar un nuevo proyecto con create-next-app. No necesitará modificarlos en este curso.
+
+
+
+
+
+
+
+El <Image>componente
+El <Image>componente es una extensión de la <img>etiqueta HTML y viene con optimización automática de imágenes, como:
+
+Evitar el cambio de diseño automático cuando se cargan las imágenes.
+Cambiar el tamaño de las imágenes para evitar enviar imágenes grandes a dispositivos con una ventana gráfica más pequeña.
+Carga diferida de imágenes de forma predeterminada (las imágenes se cargan a medida que ingresan a la ventana gráfica).
+Sirviendo imágenes en formatos modernos, como WebPy AVIF, cuando el navegador lo admita.
+
+
+Puede crear interfaces de usuario independientes para cada ruta utilizando los archivos layout.tsxy page.tsx.
+
+page.tsxEs un archivo especial de Next.js que exporta un componente de React y es necesario para que la ruta sea accesible. En tu aplicación, ya tienes un archivo de página: /app/page.tsxesta es la página de inicio asociada a la ruta /.
+
+Para crear una ruta anidada, puedes anidar carpetas y añadir page.tsxarchivos dentro de ellas. Por ejemplo:
+/app/dashboard/page.tsxEstá asociado con la /dashboardruta. ¡Creemos la página para ver cómo funciona!
+
+Creación de la página del panel de control
+Crea una nueva carpeta llamada dashboard`inside` /app. Luego, crea un nuevo page.tsxarchivo dentro de la dashboardcarpeta con el siguiente contenido:
+Ahora, asegúrese de que el servidor de desarrollo esté ejecutándose y visite http://localhost:3000/dashboardDeberías ver el texto "Página del panel".
+
+Así es como puedes crear diferentes páginas en Next.js: crea un nuevo segmento de ruta usando una carpeta y agrega un pagearchivo dentro de él.
+
+Al asignar un nombre especial a pagelos archivos, Next.js permite colocar componentes de interfaz de usuario, archivos de prueba y otro código relacionado con las rutas. Solo el contenido del pagearchivo será de acceso público. Por ejemplo, las carpetas ` /uiy` se colocan dentro de la carpeta junto con las rutas./lib/app
