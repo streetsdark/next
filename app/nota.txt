@@ -1,3 +1,29 @@
+//Configuracion de repositorio github
+
+1) entras en la carpeta de tu proyecto
+cd /ruta/de/tu/proyecto
+
+2) inicias tu repositorio, te saldra algo que significa que se ha iniciado tu repositorio 
+git init
+
+3)conectas tu proyecto con github
+https://github.com/tuusuario/mi-proyecto.git
+
+4)agregas los archivos al control de versiones
+git add .
+
+5)haces tu primer commit (comentario)
+git commit -m "Primer commit"
+
+6)subes el proyecto a github 
+git branch -M main
+git push -u origin main
+
+7)Si ahora entras a tu repo en GitHub, verás tu proyecto.
+
+--------------------------------------------------------------------------------------------------------
+
+
 /app:Contiene todas las rutas, componentes y lógica para su aplicación; aquí es donde trabajará la mayor parte del tiempo.
 
 /app/lib:Contiene funciones utilizadas en su aplicación, como funciones de utilidad reutilizables y funciones de obtención de datos.
